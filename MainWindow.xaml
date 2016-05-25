@@ -1,0 +1,74 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:justPlay"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" x:Class="justPlay.MainWindow"
+        mc:Ignorable="d"
+        Title="Just Play" Height="369.737" Width="640.789"
+        Icon="/Resources/blue-purple.ico" >
+    <Window.Resources>
+        <Style x:Key="ButtonFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#F3F3F3" Offset="0"/>
+            <GradientStop Color="#EBEBEB" Offset="0.5"/>
+            <GradientStop Color="#DDDDDD" Offset="0.5"/>
+            <GradientStop Color="#CDCDCD" Offset="1"/>
+        </LinearGradientBrush>
+
+    </Window.Resources>
+    <Grid AllowDrop="True" Drop="Grid_Drop">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0.902"/>
+                <GradientStop Color="#FFF70ACC" Offset="0.99"/>
+                <GradientStop Color="#FF4B033E" Offset="0.945"/>
+                <GradientStop Color="#FF740660" Offset="0.965"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="281*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="36*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="141*"/>
+            <ColumnDefinition Width="373*"/>
+            <ColumnDefinition Width="119*"/>
+        </Grid.ColumnDefinitions>
+        <MediaElement x:Name="screen" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MediaOpened="screen_MediaOpened" Stretch="Fill" MediaEnded="screen_MediaEnded"/>
+
+        <Slider x:Name="movie_slider" Grid.Row="1" Grid.ColumnSpan="3" Background="Black" Foreground="#FF362626" ValueChanged="movie_slider_ValueChanged" />
+        <Button x:Name="open" Grid.Row="2" Grid.Column="0" Width="40" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="7,0,0,5" Focusable="False" Cursor="Hand" Click="open_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/openFolder.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="play" Grid.Row="2" Grid.Column="1" Width="60" Height="26" HorizontalAlignment="Left" Margin="77,0,0,9" VerticalAlignment="Stretch" Focusable="False" Cursor="Hand"  Click="play_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Play.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="pause" Grid.Row="2" Grid.Column="1" Width="60" Height="25" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="142,0,171,10" Focusable="False" Cursor="Hand" Click="pause_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/pause.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="stop" Grid.Row="2" Grid.Column="1" Width="60" Height="25" HorizontalAlignment="Right"  VerticalAlignment="Stretch" Margin="0,0,106,10" Focusable="False" Cursor="Hand"  Click="stop_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/stop.png"/>
+            </Button.Background>
+        </Button>
+        <Slider x:Name="volume_slider" Grid.Row="2" Grid.Column="2" Width="90"  VerticalAlignment="Bottom"  HorizontalAlignment="Right" Margin="0,0,0,13" Minimum="0" Maximum="1" LargeChange="0.1" Cursor="Hand" ValueChanged="volume_slider_ValueChanged" Height="22"/>
+        <Image Source="/Resources/soundPic.png" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,86,9" Width="56" VerticalAlignment="Bottom" Height="31" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+    </Grid>
+</Window>

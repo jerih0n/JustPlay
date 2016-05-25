@@ -1,0 +1,14 @@
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\bin\Debug\justPlay.exe.config
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\bin\Debug\justPlay.exe
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\bin\Debug\justPlay.pdb
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.csprojResolveAssemblyReference.cache
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\MainWindow.g.cs
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\App.g.cs
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay_MarkupCompile.cache
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay_MarkupCompile.lref
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\MainWindow.baml
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.g.resources
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.Properties.Resources.resources
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.csproj.GenerateResource.Cache
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.exe
+C:\Users\DB\documents\visual studio 2015\Projects\WPFAttempts\justPlay\obj\Debug\justPlay.pdb
